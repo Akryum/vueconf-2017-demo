@@ -30,6 +30,7 @@ export default {
 		posts: {
 			query: POSTS_QUERY,
 			loadingKey: 'loading',
+			pollInterval: 500,
 		},
 	},
 }

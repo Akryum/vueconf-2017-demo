@@ -2,9 +2,9 @@
 	<main>
 		<h1>I Am Blog!</h1>
 
-		<section v-if="loading" class="loading">Loading...</section>
+		<section v-if="!$supply.Posts.ready" class="loading">Loading...</section>
 
-		<section v-for="post of posts" :key="post.id" class="posts">
+		<section v-for="post of $supply.Posts.posts" :key="post.id" class="posts">
 			<Post :title="post.title" :author="post.author.name"></Post>
 		</section>
 	</main>
@@ -12,25 +12,13 @@
 
 <script>
 import Post from './Post.vue'
-import POSTS_QUERY from '../graphql/posts.gql'
+import { use } from 'vue-supply'
 
 export default {
 	components: {
 		Post,
 	},
 
-	data () {
-		return {
-			posts: [],
-			loading: 0,
-		}
-	},
-
-	apollo: {
-		posts: {
-			query: POSTS_QUERY,
-			loadingKey: 'loading',
-		},
-	},
+	mixins: [use('Posts')],
 }
 </script>

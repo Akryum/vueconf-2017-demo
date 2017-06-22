@@ -12,25 +12,19 @@
 
 <script>
 import Post from './Post.vue'
-import POSTS_QUERY from '../graphql/posts.gql'
+import { use } from 'vue-supply'
+import { mapGetters } from 'vuex'
 
 export default {
 	components: {
 		Post,
 	},
 
-	data () {
-		return {
-			posts: [],
-			loading: 0,
-		}
-	},
+	mixins: [use('Posts')],
 
-	apollo: {
-		posts: {
-			query: POSTS_QUERY,
-			loadingKey: 'loading',
-		},
-	},
+	computed: mapGetters({
+		posts: 'all-posts',
+		loading: 'posts-loading',
+	}),
 }
 </script>
