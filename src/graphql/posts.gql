@@ -1,0 +1,8 @@
+{
+  posts {
+    title
+    author {
+      name
+    }
+  }
+}

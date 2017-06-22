@@ -1,0 +1,39 @@
+{
+  "name": "vueconf-2017-demo",
+  "version": "1.0.0",
+  "description": "A demo GraphQL client feature a dumb blog",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vue build src/index.js --config config.js",
+    "build": "vue build src/index.js --config config.js --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akryum/vueconf-2017-demo.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "graphql"
+  ],
+  "author": "Guillaume Chau guillaume.b.chau@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akryum/vueconf-2017-demo/issues"
+  },
+  "homepage": "https://github.com/Akryum/vueconf-2017-demo#readme",
+  "dependencies": {
+    "apollo-client": "^1.5.0",
+    "vue": "^2.3.4",
+    "vue-apollo": "^2.1.0-beta.9",
+    "vue-router": "^2.6.0",
+    "vue-supply": "^0.3.0",
+    "vuex": "^2.3.1"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-cli": "^2.8.2",
+    "vue-loader": "^12.2.1"
+  }
+}
