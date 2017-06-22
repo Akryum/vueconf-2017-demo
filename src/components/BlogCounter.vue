@@ -11,6 +11,7 @@ export default {
 	computed: {
 		count () {
 			return this.$supply.Posts.posts.length
+			// return this.$store.getters['posts-count']
 		},
 	},
 }
