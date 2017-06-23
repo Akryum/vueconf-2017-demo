@@ -10,9 +10,12 @@ export default {
 		}
 	},
 
+	// Use vue-apollo options
 	apollo: {
 		posts: {
 			query: POSTS_QUERY,
+			// Every supply already has a `loading` property
+			// to handle loading state
 			loadingKey: 'loading',
 			pollInterval: 500,
 		},

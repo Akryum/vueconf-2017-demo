@@ -20,8 +20,11 @@ export default {
 		Post,
 	},
 
+	// Declares that this component needs the 'Posts'
+	// supply to be active
 	mixins: [use('Posts')],
 
+	// Vuex getters
 	computed: mapGetters({
 		posts: 'all-posts',
 		loading: 'posts-loading',

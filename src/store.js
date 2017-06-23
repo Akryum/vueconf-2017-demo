@@ -10,6 +10,8 @@ Vue.use(Vuex)
 // and by the components
 export const supplyCache = {}
 
+// Inject the defined supplies
+// into the store definition
 const finalOptions = injectSupply(storeOptions, supplyCache)
 
 const store = new Vuex.Store(finalOptions)

@@ -6,6 +6,14 @@ This demo app consuming a GraphQL API shows how to use [vue-apollo](https://gith
 
 The project is built using `vue build` from the [vue-cli](https://github.com/vuejs/vue-cli) command-line tool.
 
+## Info
+
+There are three Blog components inside the `components` folder:
+
+- Blog1: vue-apollo only
+- Blog2: vue-supply in component
+- Blog3: vue-supply in vuex
+
 ## Dev
 
 ```
