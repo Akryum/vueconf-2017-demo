@@ -1,4 +1,4 @@
-# vueconf-2017-demo
+# Vue Graphql Demo - VueConf 2017
 VueConf 2017 GraphQL client demo
 
 This demo app consuming a GraphQL API shows how to use [vue-apollo](https://github.com/Akryum/vue-apollo) and [vue-supply](https://github.com/Akryum/vue-supply). It was live coded during the VueConf 2017 ([talk slides](http://slides.com/akryum/graphql#/)).
