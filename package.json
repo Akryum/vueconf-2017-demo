@@ -4,8 +4,8 @@
   "description": "A demo GraphQL client feature a dumb blog",
   "main": "src/index.js",
   "scripts": {
-    "dev": "vue build src/index.js --config config.js",
-    "build": "vue build src/index.js --config config.js --prod"
+    "dev": "npx poi src/index.js",
+    "build": "npx poi build src/index.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "vuex": "^2.3.1"
   },
   "devDependencies": {
+    "poi": "^9.6.13",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue-cli": "^2.8.2",
